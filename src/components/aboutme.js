@@ -7,6 +7,9 @@ class About extends Component {
         return (
             <div>
                 <h1>About Page</h1>
+                <p>
+                I'm a full stack web developer with a background in photoshop and lightroom
+                </p>
             </div>
         )
     }
