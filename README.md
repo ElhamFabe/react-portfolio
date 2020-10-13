@@ -14,34 +14,25 @@
   * [License](#license)
 
   # Description 
-  React portfolio 
+  React portfolio that contains the most recent projects.
 
   ### Technologies:
 
-  Node.js,Javascript
+  *React
+  *Bootstrap
+  *HTML
+  *CSS
  ---
 
   ### Installation:
 
-  run on terminal (MacOS) or git bash (windows) npm install (npm i)
-
-  #### Usage :
-
-  Clone repository and instal node.js
+  *npm start
 
 
  #### License:
   [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
   ---
 
-  #### Tests:
-  NaN
 
-  ### Contributors:
-  Elham T.Hussain :https://github.com/ElhamFabe/ReadMe_Generator
-
-  #### Questions:
-  Elhamfabe@gmail.com
- ---
 
   
