@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
 
-class Contact extends Component {
-  render() {
+function Contact () {
     return(
       <div className="contact-body">
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Elham Tahir Hussain</h2>
             <img
-              src="public/iconfinder_ninja-simple_479476.png"
+              src="./Assets/img/slicehead.jpg"
               alt="avatar"
               style={{height: '250px'}}
                />
@@ -24,23 +23,16 @@ class Contact extends Component {
             <div className="contact-list">
               <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'lucinda', color: 'white'}}>
+                    {/* <i className="fa fa-phone-square" aria-hidden="true"/> */}
                     (123) 456-7890
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-fax" aria-hidden="true"/>
-                    (123) 456-7890
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
-                    someone@example.com
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'lucinda', color: 'white' }}>
+                    {/* <i className="fa fa-envelope" aria-hidden="true"/> */}
+                    Elhamfabe@Gmail.com
                   </ListItemContent>
                 </ListItem>
 
@@ -54,6 +46,5 @@ class Contact extends Component {
       </div>
     )
   }
-}
 
 export default Contact;

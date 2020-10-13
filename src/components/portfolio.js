@@ -1,99 +1,169 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeTab: 0 };
-  }
-
-  toggleCategories() {
-
-    if(this.state.activeTab === 0){
-      return(
-        <div className="projects-grid">
-          {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        </div>
-
-
-      )
-    } else if(this.state.activeTab === 1) {
-      return (
-        <div><h1>This is Angular</h1></div>
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-        <div><h1>This is VueJS</h1></div>
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
+function Portfolio() {
+        return (
+          <main className="container-fluid">
+          {/* <!-- Card group / row 1 --> */}
+          <section className="row card-group">
+  
+              {/* <!-- Inside section will be an article tag --> */}
+              <article className="card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://elhamfabe.github.io/Password_Generator/"><img className="card-img-top" src="./Assets/img/passwordgenerator.png" alt="Password Generator landing page"/>
+                     
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+  
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Password Generator</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">The client expressed how they would like a password generator that can help any user effeciently create a password that is challenging and hard to copy. By answering the prompts, the user will receive their password based on their selected criteria.</p>
+  
+                  </div>
+                  {/* <!-- Card content --> */}
+  
+              </article>
+  
+              <article className="card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://elhamfabe.github.io/Welcome_to_Game_Foo/"><img className="card-img-top" src="./Assets/img/gamefoo.png" alt="Game Foo landing page"/>
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Game Foo</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">Game Foo is gaming database applicaton inspired by our group’s collective love of all things video games!
+                          Whether you are a fan of Playstation, Xbox or Nintendo, this is your one stop-shop when you are plagued with the age old question “So what do I play next?”</p>
+  
+  
+                  </div>
+                  {/* <!-- Card content --> */}
+  
+              </article>
+  
+              <article className="card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://elhamfabe.github.io/Timed_Quiz/"><img className="card-img-top" src="./Assets/img/timedquiz.png" alt="Timed Quiz"/>
+                    
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+  
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Time Quiz</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">This timed quiz application is made up of multiple-choice questions that can run on any browser. This app is dynamically updated with HTML and CSS powered by Javascript code. The reponsive application will adapt to various screen sizes and feature a polished user interface.</p>
+  
+                  </div>
+                  {/* <!-- Card content --> */}
+  
+              </article>
+  
+          </section>
+  
+          <section className="row card-group">
+  
+  
+              <div className="card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://github.com/ElhamFabe/Employee-Tracker" ><img className="card-img-top" src="./Assets/img/employee.png" alt="Employee Tracker"/>
+                      
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+  
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Employee Tracker</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">The Employee Tracker application is a Node.js command line based employee management system to add and manage employees, managers, roles and departments.</p>
+  
+  
+                  </div>
+  
+  
+              </div>
+  
+  
+  
+              <div className=" display:flex card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://github.com/ElhamFabe/Note-Taker"><img className="card-img-top" src="./Assets/img/notetaker.png" alt="Note Taker Landing Page"/>
+                      
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Note Taker</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">Note taker application allows users to add, store and delete notes with ease. 
+                      </p>
+  
+  
+                  </div>
+  
+  
+              </div>
+  
+  
+  
+              <article className="card mb-4">
+  
+                  {/* <!-- Placeholder image / alt attribute for accesibility --> */}
+                  <div className="view overlay">
+                      <a target="_blank" href="https://space-saverr.herokuapp.com/"><img className="card-img-top" src="./Assets/img/spacesaverr.png" alt="Space Saverr landing page"/>
+                      
+                          <div className="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+  
+                  {/* <!-- Card content --> */}
+                  <div className="card-body">
+  
+                      {/* <!-- Title --> */}
+                      <h4 className="card-title">Space Saverr</h4>
+                      {/* <!-- paragraph description of project --> */}
+                      <p className="card-text">Space Saverr is an application that helps any user navigate online shopping at a simple click of a button</p>
+  
+  
+                  </div>
+  
+  
+              </article>
+  
+  
+          </section>
+  
+      </main>
+        )
     }
 
-  }
 
-
-
-  render() {
-    return(
-      <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-        </Tabs>
-
-
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-
-
-      </div>
-    )
-  }
-}
-
-export default Projects;
+export default Portfolio;

@@ -1,34 +1,31 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import Navbar from './components/navbar';
+import About from './components/aboutme';
+import Portfolio from './components/portfolio';
+import Contact from './components/contact';
+import Footer from './components/footer';
+
+
 
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll>
-            <Navigation>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Portfolio</Link>}>
-            <Navigation>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/portfolio">Portfolio</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Drawer>
-        <Content>
-            <div className="page-content" />
-            <Main/>
-        </Content>
-    </Layout>
-</div>
+      <Router>
+      <div>
+      <Navbar/>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/aboutme" component={About} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+        <Footer />
+      </div>
+    </Router>
 
     );
   }
