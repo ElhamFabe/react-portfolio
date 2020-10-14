@@ -1,4 +1,6 @@
 # ReadMe Generator
+ ## Gif
+ ![Alt Text](public/Assets/img/react.gif)
  ## Image
  ![ApplicationImage](public/Assets/img/screenshot.png)
 
@@ -26,7 +28,7 @@
 
   ### Installation:
 
-  *npm start
+    *Npm start
 
 
  #### License:
